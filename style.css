@@ -1,13 +1,16 @@
 body {
   background: #556b2f; /* verde musgo */
   font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: #c5e1a5; /* verde claro para contraste */
+  text-align: center;
+}
+
+body.index {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
-  color: #c5e1a5; /* verde claro para contraste */
-  text-align: center;
 }
 
 main {

@@ -283,3 +283,45 @@ figure {
     padding: 10px 18px;
   }
 }
+
+/* Espaçamento geral para todas as páginas */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  margin-top: 20px; /* garante espaço no topo */
+}
+
+/* Ajustes específicos para fotos e músicas */
+.galeria, .musicas {
+  padding-top: 40px; /* espaço extra no topo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  .fotos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure {
+    max-width: 90%;
+  }
+
+  .musica {
+    text-align: center;
+    padding: 10px;
+  }
+}

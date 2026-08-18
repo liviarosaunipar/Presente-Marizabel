@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta para Você</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="carta">
+    <h2>Uma carta para você</h2>
+    <button id="abrirCarta" class="surpresa">Abrir carta</button>
+    
+    <div id="conteudoCarta" class="conteudo-carta">
+      <p>
+        Para meu amor Maria Izabel,  
+        <br><br>
+        Fiz isso em comemoração aos seus 17 anos de vida, 
+        <br> você apareceu para mim quando eu menos esperava e mesmo assim não há um dia em que eu não pense em você,
+        <br> em pouquissímo tempo você conseguiu marcar minha vida como ninguém antes.
+        <br>
+        <br>Eu te amo.
+        <br>
+        <br>Com amor, 
+        <br>Lívia Rosa
+        
+      </p>
+    </div>
+  </main>
+
+  <script>
+    const botao = document.getElementById('abrirCarta');
+    const carta = document.getElementById('conteudoCarta');
+
+    botao.addEventListener('click', () => {
+      carta.classList.add('visivel');
+      botao.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

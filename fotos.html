@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossas Fotos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="galeria">
+    <h2>Nossos Momentos</h2>
+    <div class="fotos">
+      <figure>
+        <img src="imagens/primeira.jpeg" alt="Foto 1" class="fade">
+        <figcaption>Nossa primeira foto juntas</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/segunda.jpeg" alt="Foto 2" class="fade">
+        <figcaption>O dia que fiz uma das melhores coisas da minha vida</figcaption>
+      </figure>
+      <figure>
+        <img src="imagens/terceira.jpeg" alt="Foto 3" class="fade">
+        <figcaption>Nossa última foto juntas</figcaption>
+      </figure>
+    </div>
+
+       <div class="botao-musicas">
+      <a href="musicas.html" class="surpresa">Clique aqui</a>
+    </div>
+  </main>
+
+  <script>
+    const imagens = document.querySelectorAll('.fade');
+    let delay = 300;
+
+    imagens.forEach((img, i) => {
+      setTimeout(() => {
+        img.classList.add('visivel');
+      }, delay * (i + 1));
+    });
+  </script>
+</body>
+</html>

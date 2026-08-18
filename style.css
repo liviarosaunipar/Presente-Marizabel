@@ -1,0 +1,211 @@
+body {
+  background: #556b2f; /* verde musgo */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #c5e1a5; /* verde claro para contraste */
+  text-align: center;
+}
+
+main {
+  max-width: 600px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.foto {
+  width: 60%;          /* reduz tamanho da imagem */
+  max-width: 250px;    /* limite máximo */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+.surpresa {
+  padding: 12px 24px;
+  background: #2e4600; /* verde escuro */
+  border: none;
+  border-radius: 5px;
+  color: #c5e1a5; /* verde claro */
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.surpresa:hover {
+  background: #3b5323;
+}
+
+main.galeria {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #c5e1a5;
+  font-size: 2em;
+}
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px; /* espaço entre fotos e botão */
+}
+
+figure {
+  flex: 1 1 250px;
+  max-width: 250px;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+figure img.visivel {
+  opacity: 1;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #c5e1a5;
+}
+
+.botao-musicas {
+  text-align: center; /* garante que o botão fique centralizado */
+}
+
+.surpresa {
+  padding: 12px 24px;
+  background: #2e4600;
+  border: none;
+  border-radius: 5px;
+  color: #c5e1a5;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.surpresa:hover {
+  background: #3b5323;
+}
+
+.musicas {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.musicas h2 {
+  color: #c5e1a5;
+  margin-bottom: 20px;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.musica h3 {
+  color: #c5e1a5;
+}
+
+.musica h4 {
+    color: #c5e1a5;
+}
+
+.letra {
+  font-style: italic;
+  color: #c5e1a5;
+  margin-bottom: 10px;
+}
+
+audio {
+  width: 100%;
+  max-width: 400px;
+}
+
+.botao-carta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.surpresa {
+  padding: 12px 24px;
+  background: #2e4600;
+  border: none;
+  border-radius: 5px;
+  color: #c5e1a5;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.surpresa:hover {
+  background: #3b5323;
+}
+
+.carta {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.carta h2 {
+  color: #c5e1a5;
+  margin-bottom: 20px;
+}
+
+.conteudo-carta {
+  display: none;
+  background: #fdf6e3; /* tom de papel */
+  color: #2e4600;      /* verde escuro para parecer tinta */
+  font-family: 'Cedarville Cursive', cursive; /* fonte manuscrita */
+  font-size: 1.2em;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.conteudo-carta.visivel {
+  display: block;
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
